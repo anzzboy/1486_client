@@ -1,0 +1,49 @@
+:root {
+  --a: rgb(59, 59, 59);
+  --b: #d1d1d1;
+  --c: rgb(48, 48, 48);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  color: var(--b);
+  background: var(--a);
+}
+
+.topnav {
+  margin: -10px;
+  background-color: var(--c);
+  overflow: hidden;
+}
+
+.topnav button {
+  float: left;
+  font-weight: bolder;
+  font-size: 250%;
+  line-height: 150%;
+  color: var(--b);
+  background-color: var(--c);
+  outline: 0;
+  transition-duration: 250ms;
+  text-align: center;
+  padding: 14px 16px;
+  border-width: 0;
+  text-decoration: none;
+}
+
+.topnav button:hover {
+  background-color: var(--b);
+  color: var(--a);
+}
+
+.topnav button.active {
+  background-color: var(--a);
+  color: var(--b);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
