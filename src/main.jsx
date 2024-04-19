@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// navigation
+
 import Home from "./components/Home.jsx";
 import Admin from "./components/Admin.jsx";
 

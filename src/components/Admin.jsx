@@ -7,6 +7,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
+    // fetch data
     async function fetchData() {
       const response = await fetch(
         `https://store-website-backend-1.onrender.com/lists/`
@@ -23,6 +24,7 @@ function App() {
   });
 
   const removeAll = () => {
+    // loop and remove all data
     data.map((obj) => {
       try {
         const response = fetch(
@@ -75,6 +77,7 @@ function Admin() {
   };
 
   return (
+    //passwrod stuff, show app component if guessed right
     <>
       <Navbar />
       {verified ? (

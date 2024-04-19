@@ -3,9 +3,11 @@ import Cookies from "universal-cookie";
 
 import Navbar from "./Navbar";
 
-/* eslint-disable react/prop-types */
+// home page
 
+/* eslint-disable react/prop-types */
 function FoodItem({ name, price, addItem, removeItem, amtBought }) {
+  // food item function
   return (
     <>
       {name + ", you bought " + amtBought + " " + price + "$"}
@@ -133,6 +135,7 @@ function Home() {
       {serverStatus}
       <div className="flex">
         {menu.map((list) => {
+          // map thru menu to setup store
           const map_name = list[0];
           const map_price = list[1];
 
