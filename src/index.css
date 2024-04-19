@@ -17,6 +17,21 @@
   overflow: hidden;
 }
 
+button {
+  color: var(--b);
+  background-color: var(--c);
+  transition-duration: 250ms;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--b);
+  color: var(--a);
+}
+button:active {
+  background-color: var(--a);
+  color: var(--a);
+}
 .topnav button {
   float: left;
   font-weight: bolder;
